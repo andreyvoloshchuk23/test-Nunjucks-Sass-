@@ -1,0 +1,139 @@
+#main
+	.center
+		margin-top: 50px
+		.slider
+			width: 45%
+			height: 100%
+			float: left
+			+sm
+				width: 100%
+			.slider_wrap
+				width: 100%
+				heigth: 100%
+				.small
+					width: 20%
+					height: 100%
+					float: left
+					cursor: pointer
+					img
+						width: 100%
+						max-height: 150px
+						margin-bottom: 2%
+				.main
+					width: 78% 
+					height: 650px
+					margin-left: 2%
+					float: right
+					img
+						width: 100%
+						height: 650px	
+		.description
+			width: 45%
+			float: right					
+			height: 100%
+			text-align: center
+			+sm
+				width: 100%
+				margin-top: 50px
+			.way
+				width: 100%
+				text-align: center
+				color: #9fcede
+				margin-bottom: 20px
+				font-family: Georgia
+				+fs(10)
+				a
+					color: #9fcede
+					text-decoration: none
+					+fs(7.5)
+			h3
+				display: block
+				width: 50%
+				text-align: center
+				margin: 0 auto
+				text-transform: uppercase
+				+fs(15)
+			.price
+				width: 100%
+				height: 140px
+				span
+					position: relative
+					top: 15%	
+					transform: translateY(-50%)		
+					+fs(13.75)
+					font-family: Georgia
+			.descr
+				width: 100%
+				height: 100%
+				margin-bottom: 50px
+				h6
+					display: block
+					width: 100%
+					height: 30px
+					border-bottom: 1px solid $lightgrey
+					+fs(8.2)
+					margin-bottom: 20px
+				p
+					color: $lightgrey
+					+fs(10)			
+			.colors
+				float: left
+				height: 100%
+				+clr
+				h6
+					display: block
+					width: 150px
+					height: 30px
+					+fs(8.2)
+					border-bottom: 1px solid $lightgrey
+					text-align: left
+				form
+					height: 100%
+					float: left
+					+clr
+					div
+						text-align: left
+						height: 20px
+						margin: 10px 0 10px 0
+						color: $lightgrey
+						span
+							width: 15px
+							height: 15px
+							display: inline-block
+							margin: 0 5px 0 5px
+						label[for='blue']
+							font-family: Georgia
+							+fs(8.2)
+							cursor: pointer
+							span
+								background-color: #9fcede
+						label[for='brown']
+							font-family: Georgia
+							+fs(8.2)
+							cursor: pointer
+							span
+								background-color: #333743
+						input
+							display: none
+						.box
+							position: relative
+							width: 15px
+							height: 15px
+							background-color: #fff
+							border-radius: 50%	
+							border: 1px solid black
+							cursor: pointer
+						input
+							&:checked + .box
+								background-image: img-url('check.png')
+								background-size: 110% 110%
+								background-position: center center	
+			button
+				width: 100%
+				height: 50px
+				background-color: #afa394
+				color: #fff
+				margin-top: 90px
+				+fs(8.2)
+				font-family: Georgia
+				cursor: pointer

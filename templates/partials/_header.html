@@ -1,0 +1,33 @@
+<header>
+	<div class="logo">
+		<img src="img/logo.png" alt="">
+	</div>
+	<div class="center">
+		<nav>
+			<div>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<ul>
+				{% for item in data.items_nav %}
+					<li><a href="#">{{item.name}}</a></li>
+				{% endfor %}	
+			</ul>
+		</nav>
+		<div class="bag">
+			<a href="">Bag</a>
+			<p class="counter">
+				3
+			</p>
+		</div>
+	</div>
+	<div class="sign">
+		<div class="login">
+			<a href="" class="active">Login</a>
+		</div>
+		<div class="signup">
+			<a href="">Sign up</a>
+		</div>
+	</div>
+</header>

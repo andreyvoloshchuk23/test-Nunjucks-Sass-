@@ -1,0 +1,16 @@
+<section id="other">
+	<div class="center">
+		<p>We thought</p>
+		<h6>you might like these too...</h6>
+		<div class="products">
+			{% for item in data.items_products %}
+			<div>
+				<img src= "../img/other/{{item.img}}" alt="">
+				<h6>{{item.name}}</h6>
+				<p>{{item.type}}</p>
+				<span>{{item.price}}</span>
+			</div>
+			{% endfor%}
+		</div>
+
+	</section>

@@ -1,0 +1,164 @@
+header
+	width: 100%
+	height: 70px
+	box-shadow: 0px 5px 2px -3px $lightgrey
+	.logo
+		width: 10%
+		height: 100%
+		float: left
+		+xs
+			display: none
+		img
+			width: 30px
+			margin: 0 auto
+			display: block
+			position: relative
+			top: 50%
+			transform: translateY(-50%)
+	.center
+		width: 80%
+		display: inline-block
+		height: 100%
+		+sm
+			width: 70%
+		nav	
+			width: 60%
+			height: 100%
+			display: inline-block
+			.active
+				span
+					&:nth-child(1)
+						top: 27px
+						+rotate(45)
+					&:nth-child(2)
+						top: 25px
+						+rotate(-45)
+					&:nth-child(3)
+						+rotate(180)
+						opacity: 0		
+			div
+				width: 60px
+				height: 60px
+				float: left
+				position: relative
+				top: 50%
+				cursor: pointer
+				display: none
+				transform: translateY(-50%)
+				border-radius: 5px
+				background-color: $lightgrey
+				+tr(1s ease all)
+				+xs
+					display: block
+					margin-left: 5%
+				span
+					display: block
+					width: 80%
+					height: 3px
+					+tr(1s ease all)
+					margin: 0 auto
+					background-color: #000
+					position: relative
+					&:nth-child(1)
+						top: 15px
+					&:nth-child(2)
+						top: 25px
+					&:nth-child(3)
+						top: 35px	
+			ul
+				width: 100%
+				height: 100%
+				list-style-type: none
+				+xs
+					display: none	
+					width: 100%
+					position: fixed
+					top: 70px
+					background-color: rgba(0,0,0,0.4)
+				li
+					width: 15%
+					margin-right: 10px
+					float: left
+					position: relative
+					top: 30%
+					transform: translateY(-50%)
+					+xs
+						display: block
+						top: 50px
+						width: 100%
+						padding: 5px 0 5px 0
+					a
+						+fs(6.8) 
+						text-transform: uppercase
+						color: $lightgrey
+						text-decoration: none
+						+tr(.5 ease all)
+						+xs
+							display: block
+							height: 20px
+							margin: 0 auto
+							text-align: center
+							font-size: 0.8rem
+							color: #fff
+					a:hover	
+						color: #000
+						+xs
+							background-color: #fff
+					.active
+						color: #000	
+		.bag
+			display: inline-block
+			position: relative
+			top: 30%
+			transform: translateY(-50%)
+			float: right
+			margin-right: 2%
+			+xs
+				top: 50%
+			a
+				text-decoration: none
+				color: #000
+				+fs(8.1)
+				position: relative
+				right: 10px
+			p
+				display: inline-block
+				width: 20px
+				height: 20px
+				border-radius: 50%
+				background-color: #000
+				color: #fff
+				text-align: center
+				+fs(8.2)
+	.sign
+		width: 10%
+		height: 100%
+		float: right
+		border-left: 1px solid $lightgrey
+		+fs(8.2)
+		+sm
+			width: 20%
+		+r(640)
+			width: 30%	
+		.login
+			width: 50%
+			float: left
+			text-align: center
+			a
+				border-right: 1px solid black
+		.signup		
+			width: 50%
+			float: right
+			text-align: center
+		.login, .signup
+			height: 100%
+			a
+				width: 100%
+				display: inline-block
+				color: $lightgrey
+				position: relative
+				top: 50%
+				transform: translateY(-50%)
+				text-decoration: none
+			.active
+				color: #000
